@@ -24,7 +24,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:14":
   version: 14.0.24
   resolution: "@types/node@npm:14.0.24"
   checksum: b10d6b56faeb7fdf2d2527d7aa685b472adaf810612903d667e364eb53a1ffd2ee0e74f25ab135375c7c3f77400cf05a569d7b8d5eee51cbf7b2f748ec86383d
@@ -2021,9 +2021,10 @@ resolve@1.1.7:
   resolution: "tsify-repro-types-issue@workspace:."
   dependencies:
     "@types/browserify": ^12.0.36
+    "@types/node": 14
     browserify: ^16.5.1
     tsify: "patch:tsify@4.0.2#./typefix.patch"
-    typescript: latest
+    typescript: 3.1
   languageName: unknown
   linkType: soft
 
@@ -2046,7 +2047,7 @@ tsify@4.0.2:
 
 "tsify@patch:tsify@4.0.2#./typefix.patch::locator=tsify-repro-types-issue%40workspace%3A.":
   version: 4.0.2
-  resolution: "tsify@patch:tsify@npm%3A4.0.2#./typefix.patch::version=4.0.2&hash=48862d&locator=tsify-repro-types-issue%40workspace%3A."
+  resolution: "tsify@patch:tsify@npm%3A4.0.2#./typefix.patch::version=4.0.2&hash=da1714&locator=tsify-repro-types-issue%40workspace%3A."
   dependencies:
     convert-source-map: ^1.1.0
     fs.realpath: ^1.0.0
@@ -2057,7 +2058,7 @@ tsify@4.0.2:
   peerDependencies:
     browserify: ">= 10.x"
     typescript: ">= 2.x"
-  checksum: bf51147c07c460078ab678c49c2367d15d06509dfda88595eb6ede49caad3cdbac592c1c9820a5c6d41d73c09c03173e0b8254bb321da11da67465433f47ee9b
+  checksum: ebadfc4f0d9f9d7da4f3af0ad48d0258a81588309ea4f818f25f5b6515d6e24ab553530ebb6c787ac2c9c0b090dde1da8a3413fdffae725873af63f46f385a88
   languageName: node
   linkType: hard
 
@@ -2091,23 +2092,23 @@ tsify@4.0.2:
   languageName: node
   linkType: hard
 
-typescript@latest:
-  version: 3.9.7
-  resolution: "typescript@npm:3.9.7"
+typescript@3.1:
+  version: 3.1.6
+  resolution: "typescript@npm:3.1.6"
   bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 10848a9c35fd8c70a8792b8bd9485317534bcd58768793d3b7d9c7486e9fd30cf345f83fa2a324e0bf6088bc8a4d8d061d58fda38b18c2ff187cf01fbbff6267
+    tsc: ./bin/tsc
+    tsserver: ./bin/tsserver
+  checksum: 0cc34aeb7ca1967a2ef57b39a37cf258efdd0e22e081f4837a29c4407e017047c3bb8e9e341ac88b957cdbd383d9152453213b99bea7c8b189045e80816c10c7
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@latest#builtin<compat/typescript>":
-  version: 3.9.7
-  resolution: "typescript@patch:typescript@npm%3A3.9.7#builtin<compat/typescript>::version=3.9.7&hash=5b02a2"
+"typescript@patch:typescript@3.1#builtin<compat/typescript>":
+  version: 3.1.6
+  resolution: "typescript@patch:typescript@npm%3A3.1.6#builtin<compat/typescript>::version=3.1.6&hash=5b02a2"
   bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: f0d3d9c987860c7c458229ab6dd7e3d322405db36b70abccba610b5efd9f9451e4e67a3fc7983c0d3741033c1f1a8d7aa859a1510caa8f20fad762fc39648bfa
+    tsc: ./bin/tsc
+    tsserver: ./bin/tsserver
+  checksum: db9fc9a4e15b655da1bfdc74bce270786040eb49a51c0069bc391b8fd001266dd4bef1aee90d58f92bbdcfeee42825eccb4541a14410aace005b434b77152b3d
   languageName: node
   linkType: hard
 

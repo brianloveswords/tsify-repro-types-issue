@@ -50,26 +50,31 @@ Found 4 errors.
 ## Fix
 
 To see the fix, replace the entry for `tsify` with
-"patch:tsify@4.0.2#./typefix.patch" and run `make`. You should see the
-following:
+"patch:tsify@4.0.2#./typefix.patch" and run `make`. You should see `yarn exec
+tsc` finish cleanly with no errors.
 
-```text
-<some yarn output>
-yarn exec tsc
-node index.js
-node out/opt1.js
-okay
-node out/opt2.js
-okay
-```
+To test against different versions of typescript, pass a `version` flag to
+make, e.g. `make version=3.8.3` or `make version=latest`.
 
-To test against different versions of typescript, pass a `version=` flag to make, e.g. `make version=3.8.3` or `make version=latest`.
+This patch has been tested against the following versions of typescript:
 
-This patch was tested against the following versions of typescript:
-
-- 3.8.3
-- 3.9.7
 - 4.0.0-dev.20200722
+- 3.9.7
+- 3.8.3
+- 3.7.5
+- 3.6.5
+- 3.5.3
+- 3.4.5
+- 3.3.4
+- 3.2.4
+- 3.1.6
+- 3.0.3
+- 2.9.2
+- 2.8.4
+
+TypeScript <= 2.8 is not supported by this type declaration because it relies
+on conditional types (via the `Exclude` utility type) which were introduced in
+TypeScript 2.8.
 
 ## Patch
 
@@ -77,21 +82,25 @@ The patch that fixes this issue can be found at `typefix.patch`, but is short en
 
 ```diff
 diff --git a/index.d.ts b/index.d.ts
-index 938ba85aaf0e761ed47cf9b775ea42347c1f2155..0605195de3c0cab996fd8114868daae496b60946 100644
+index 938ba85aaf0e761ed47cf9b775ea42347c1f2155..8e8fd33e9c4038bde0a8b10140a894f4b97685b1 100644
 --- a/index.d.ts
 +++ b/index.d.ts
-@@ -1,8 +1,8 @@
+@@ -1,8 +1,11 @@
  import { BrowserifyObject, CustomOptions } from "browserify";
- import { CompilerOptions, ModuleKind, ScriptTarget } from "typescript";
+-import { CompilerOptions, ModuleKind, ScriptTarget } from "typescript";
++import typescript, { CompilerOptions, ModuleKind, ScriptTarget } from "typescript";
 
 -export interface Options extends CustomOptions, CompilerOptions {
 -	typescript?: string | import("typescript");
++// Provide local definition of Omit for compatibility with TypeScript <3.5
++type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
++
 +export interface Options extends CustomOptions, Omit<CompilerOptions, "project"> {
-+	typescript?: string | typeof import("typescript");
++	typescript?: string | typeof typescript;
  	global?: boolean;
  	m?: ModuleKind;
  	p?: string | CompilerOptions;
-@@ -10,6 +10,4 @@ export interface Options extends CustomOptions, CompilerOptions {
+@@ -10,6 +13,4 @@ export interface Options extends CustomOptions, CompilerOptions {
  	t?: ScriptTarget;
  }
 

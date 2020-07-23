@@ -23,6 +23,7 @@ function testOpt2() {
         project: {
             target: ScriptTarget.ES5,
             module: ModuleKind.CommonJS,
+            lib: ["ES2015"],
             strict: true,
             moduleResolution: ModuleResolutionKind.NodeJs,
             esModuleInterop: true,
