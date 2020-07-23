@@ -5,6 +5,32 @@ __metadata:
   version: 4
   cacheKey: 5
 
+"@types/browserify@npm:^12.0.36":
+  version: 12.0.36
+  resolution: "@types/browserify@npm:12.0.36"
+  dependencies:
+    "@types/insert-module-globals": "*"
+    "@types/node": "*"
+  checksum: 100b49207e1a6b977bf70164da421ed3e5450cde1a55c0f1fd34489c212449f19c52b30762a11f8b94a409c03aaa15f5e1dfef80811d6c069321d6b88b59e276
+  languageName: node
+  linkType: hard
+
+"@types/insert-module-globals@npm:*":
+  version: 7.0.1
+  resolution: "@types/insert-module-globals@npm:7.0.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: 910b0ffe39bb36fb88ca8dae9298c1c578d9dcd88d23fffd5446f68b3cf38ca05a437c2ef911a7b1ee1e23ab1d38b0245896cb907763cf0a8960eeb3bde46f2a
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:*":
+  version: 14.0.24
+  resolution: "@types/node@npm:14.0.24"
+  checksum: b10d6b56faeb7fdf2d2527d7aa685b472adaf810612903d667e364eb53a1ffd2ee0e74f25ab135375c7c3f77400cf05a569d7b8d5eee51cbf7b2f748ec86383d
+  languageName: node
+  linkType: hard
+
 "JSONStream@npm:^1.0.3":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"
@@ -67,6 +93,13 @@ __metadata:
   version: 2.1.1
   resolution: "ansi-regex@npm:2.1.1"
   checksum: 93a53c923fd433f67cd3d5647dffa6790f37bbfb924cf73ad23e28a8e414bde142d1da260d9a2be52ac4aa382063196880b1d40cf8b547642c746ed538ebf6c4
+  languageName: node
+  linkType: hard
+
+"any-promise@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "any-promise@npm:1.3.0"
+  checksum: e829425e4aef532fb9063c638de4693feaf285dae8ba84bcabd9c6d49446264650d1e16b73af8a25ae1e4480f9a4dc7cae364b4c4d4753b57dd1900cdfab8183
   languageName: node
   linkType: hard
 
@@ -485,6 +518,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"convert-source-map@npm:^1.1.0":
+  version: 1.7.0
+  resolution: "convert-source-map@npm:1.7.0"
+  dependencies:
+    safe-buffer: ~5.1.1
+  checksum: b10fbf041e3221c65e1ab67f05c8fcbad9c5fd078c62f4a6e05cb5fddc4b5a0e8a17c6a361c6a44f011b1a0c090b36aa88543be9dfa65da8c9e7f39c5de2d4df
+  languageName: node
+  linkType: hard
+
 "convert-source-map@npm:~1.1.0":
   version: 1.1.3
   resolution: "convert-source-map@npm:1.1.3"
@@ -685,6 +727,15 @@ __metadata:
   version: 2.2.0
   resolution: "env-paths@npm:2.2.0"
   checksum: 09de4fd1c068d5965aa8aede852a764b7fb6fa8f1299ba7789bc29c22840ab1985e0c9c55bc6bf40b4276834b8adfa1baf82ec9bc58445d9e75800dc32d78a4f
+  languageName: node
+  linkType: hard
+
+"error-ex@npm:^1.2.0":
+  version: 1.3.2
+  resolution: "error-ex@npm:1.3.2"
+  dependencies:
+    is-arrayish: ^0.2.1
+  checksum: 6c6c9187429ae867d145bc64c682c7c137b1f8373a406dc3b605c0d92f15b85bfcea02b461dc55ae11b10d013377e1eaf3d469d2861b2f94703c743620a9c08c
   languageName: node
   linkType: hard
 
@@ -992,6 +1043,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-arrayish@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "is-arrayish@npm:0.2.1"
+  checksum: fc2bbe14dbcb27b490e63b7fbf0e3b0aae843e5e1fa96d79450bb9617797615a575c78c454ffc8e027c3ad50d63d83e85a7387784979dcd46686d2eb5f412db0
+  languageName: node
+  linkType: hard
+
 "is-buffer@npm:^1.1.0":
   version: 1.1.6
   resolution: "is-buffer@npm:1.1.6"
@@ -1012,6 +1070,13 @@ __metadata:
   version: 1.0.0
   resolution: "is-typedarray@npm:1.0.0"
   checksum: 4e21156e7360a5916eded35c5938adf6278299a8055640864eebb251e4351cd605beccddf9af27477e19f753d453412fe0c21379bb54b55cfdf5add263076959
+  languageName: node
+  linkType: hard
+
+"is-utf8@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "is-utf8@npm:0.2.1"
+  checksum: c72f604d72b72f6a57f9b2e22c9b6f480e869b3f0efe141bd1dfbc36655225043ca8c1316ff8e343ef641cf80868c9e4a37345492f31402abd5ab68e09367977
   languageName: node
   linkType: hard
 
@@ -1380,6 +1445,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"parse-json@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "parse-json@npm:2.2.0"
+  dependencies:
+    error-ex: ^1.2.0
+  checksum: 920582196a8edebb3d3c4623b2f057987218272b35ae4d2d310c00bc1bd7e89b87c79358d7e009d54f047ca2eea82eab8d7e1b14e1f7cbbb345ef29fcda29731
+  languageName: node
+  linkType: hard
+
 "path-browserify@npm:~0.0.0":
   version: 0.0.1
   resolution: "path-browserify@npm:0.0.1"
@@ -1661,6 +1735,15 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
+"semver@npm:^6.1.0":
+  version: 6.3.0
+  resolution: "semver@npm:6.3.0"
+  bin:
+    semver: ./bin/semver.js
+  checksum: f0d155c06a67cc7e500c92d929339f1c6efd4ce9fe398aee6acc00a2333489cca0f5b4e76ee7292beba237fcca4b5a3d4a6153471f105f56299801bdab37289f
+  languageName: node
+  linkType: hard
+
 "semver@npm:^7.3.2":
   version: 7.3.2
   resolution: "semver@npm:7.3.2"
@@ -1837,6 +1920,22 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
+"strip-bom@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "strip-bom@npm:2.0.0"
+  dependencies:
+    is-utf8: ^0.2.0
+  checksum: d488310c44b2a089d1d2ff54e90198eb8d32e6d2016ae811c732b1a6472dea15ae72dc21ee35ee6729cf71e9b663b3216d3e48cd1e5fba3b6093fd0b19ae7d0b
+  languageName: node
+  linkType: hard
+
+"strip-json-comments@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "strip-json-comments@npm:2.0.1"
+  checksum: e60d99aa2849c27a04dce0620334f45822197df6b83664dd3746971e9a0a766d989dbb8d87f9cb7350725d2b5df401a2343222ad06e36a1ba7d62c6633267fcb
+  languageName: node
+  linkType: hard
+
 "subarg@npm:^1.0.0":
   version: 1.0.0
   resolution: "subarg@npm:1.0.0"
@@ -1905,14 +2004,45 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"tsify-test@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "tsify-test@workspace:."
+"tsconfig@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "tsconfig@npm:5.0.3"
   dependencies:
+    any-promise: ^1.3.0
+    parse-json: ^2.2.0
+    strip-bom: ^2.0.0
+    strip-json-comments: ^2.0.0
+  checksum: cf3cc9ba94832277ceaa15f0e3922ca2fbd7539815312aa483a762f6c5fe60e6e147c68d268eff25fc17b0b036d2064609cea026a8cb965e8e882f646e777ca5
+  languageName: node
+  linkType: hard
+
+"tsify-repro-types-issue@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "tsify-repro-types-issue@workspace:."
+  dependencies:
+    "@types/browserify": ^12.0.36
     browserify: ^16.5.1
+    tsify: ^4.0.2
     typescript: 3.8.3
   languageName: unknown
   linkType: soft
+
+"tsify@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "tsify@npm:4.0.2"
+  dependencies:
+    convert-source-map: ^1.1.0
+    fs.realpath: ^1.0.0
+    object-assign: ^4.1.0
+    semver: ^6.1.0
+    through2: ^2.0.0
+    tsconfig: ^5.0.3
+  peerDependencies:
+    browserify: ">= 10.x"
+    typescript: ">= 2.x"
+  checksum: 023155888601fd2b1373beec3bdcc100d0ef3aeb889861c10a78dc6750582b057bd8153e88934a5d38aabdf1df4a867b0ccfbaee90c028485ad60dc1b0c48f10
+  languageName: node
+  linkType: hard
 
 "tty-browserify@npm:0.0.1":
   version: 0.0.1
