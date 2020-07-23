@@ -63,6 +63,14 @@ node out/opt2.js
 okay
 ```
 
+To test against different versions of typescript, pass a `version=` flag to make, e.g. `make version=3.8.3` or `make version=latest`.
+
+This patch was tested against the following versions of typescript:
+
+- 3.8.3
+- 3.9.7
+- 4.0.0-dev.20200722
+
 ## Patch
 
 The patch that fixes this issue can be found at `typefix.patch`, but is short enough to inline here:
