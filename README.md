@@ -1,7 +1,7 @@
 # tsify-repo-types-issue
 
-This repository creates a repro case for an issue with the types (index.d.ts)
-on `tsify@4.0.2` and provides a patch for that issue along.
+This repository creates a repro case for an issue with the types
+(`index.d.ts`) on `tsify@4.0.2` and provides a patch for that issue.
 
 ## Requirements
 
