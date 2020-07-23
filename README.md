@@ -3,18 +3,18 @@
 This repository creates a repro case for an issue with the types
 (`index.d.ts`) on `tsify@4.0.2` and provides a patch for that issue.
 
-## Requirements
-
-- *yarn*: the `patch` protocol provided by yarn is used in the package.json for this repo.
-
 ## Issue
 
 When using `tsify` in API form in a typescript project, the project will not
 compile because of errors in the `tsify` type declaration.
 
+## Requirements
+
+For this repository `yarn` is required so the `patch` protocol can be used in `package.json`.
+
 ## Reproduction
 
-See `index.js` for the test file.
+See `index.ts` for the test file.
 
 To see a reproduction of the issue, change the `tsify` entry in `package.json`
 to "4.0.2" and run `make`. You should see the following:
